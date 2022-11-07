@@ -35,6 +35,6 @@ app.use('/products', productsRouter);
 app.use('/users', userRouter);
 
 
-app.listen(3030, () => {
+app.listen(process.env.PORT || 3030, () => {
   console.log("Servidor corriendo, puerto 3030");
 });
